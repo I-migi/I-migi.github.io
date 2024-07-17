@@ -11,6 +11,9 @@
             padding: 0;
             background-color: #f4f4f4;
             color: #333;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
         }
         header {
             background-color: #333;
@@ -35,9 +38,9 @@
             text-decoration: underline;
         }
         .container {
+            flex: 1;
             width: 80%;
             margin: auto;
-            overflow: hidden;
         }
         .section {
             padding: 20px 0;
@@ -99,72 +102,70 @@
             color: white;
             text-align: center;
             padding: 10px 0;
-            position: absolute;
-            bottom: 0;
-            width: 100%;
+            margin-top: auto;
         }
     </style>
 </head>
 <body>
-<header>
-    <h1>Lee Sun Woo's Portfolio</h1>
-</header>
-<nav>
-    <a href="#about">About</a>
-    <a href="#projects">Projects</a>
-    <a href="#skills">Skills</a>
-    <a href="#contact">Contact</a>
-</nav>
-<div class="container">
-    <section id="about" class="section">
-        <h2>About Me</h2>
-        <p>Hi, I'm Lee Sun Woo, a passionate backend developer with a keen interest in creating scalable and efficient server-side applications. My goal is to build robust and secure back-end infrastructures for innovative projects.</p>
-    </section>
-    <section id="projects" class="section">
-        <h2>Projects</h2>
-        <div class="projects">
-            <div class="project">
-                <h3>Project Title 1</h3>
-                <p>Description of the project. Explain the technologies used, challenges faced, and the solutions implemented.</p>
+    <header>
+        <h1>Lee Sun Woo's Portfolio</h1>
+    </header>
+    <nav>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <div class="container">
+        <section id="about" class="section">
+            <h2>About Me</h2>
+            <p>Hi, I'm Lee Sun Woo, a passionate backend developer with a keen interest in creating scalable and efficient server-side applications. My goal is to build robust and secure back-end infrastructures for innovative projects.</p>
+        </section>
+        <section id="projects" class="section">
+            <h2>Projects</h2>
+            <div class="projects">
+                <div class="project">
+                    <h3>Project Title 1</h3>
+                    <p>Description of the project. Explain the technologies used, challenges faced, and the solutions implemented.</p>
+                </div>
+                <div class="project">
+                    <h3>Project Title 2</h3>
+                    <p>Description of the project. Explain the technologies used, challenges faced, and the solutions implemented.</p>
+                </div>
+                <!-- 추가 프로젝트는 여기서 복사 붙여넣기 하여 추가 -->
             </div>
-            <div class="project">
-                <h3>Project Title 2</h3>
-                <p>Description of the project. Explain the technologies used, challenges faced, and the solutions implemented.</p>
+        </section>
+        <section id="skills" class="section">
+            <h2>Skills</h2>
+            <div class="skills">
+                <div class="skill">
+                    <h3>Skill 1</h3>
+                    <p>Detail about the skill and proficiency level.</p>
+                </div>
+                <div class="skill">
+                    <h3>Skill 2</h3>
+                    <p>Detail about the skill and proficiency level.</p>
+                </div>
+                <!-- 추가 스킬은 여기서 복사 붙여넣기 하여 추가 -->
             </div>
-            <!-- 추가 프로젝트는 여기서 복사 붙여넣기 하여 추가 -->
-        </div>
-    </section>
-    <section id="skills" class="section">
-        <h2>Skills</h2>
-        <div class="skills">
-            <div class="skill">
-                <h3>Skill 1</h3>
-                <p>Detail about the skill and proficiency level.</p>
+        </section>
+        <section id="contact" class="section">
+            <h2>Contact</h2>
+            <div class="contact-form">
+                <form action="mailto:your-email@example.com" method="post" enctype="text/plain">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                    <button type="submit">Send</button>
+                </form>
             </div>
-            <div class="skill">
-                <h3>Skill 2</h3>
-                <p>Detail about the skill and proficiency level.</p>
-            </div>
-            <!-- 추가 스킬은 여기서 복사 붙여넣기 하여 추가 -->
-        </div>
-    </section>
-    <section id="contact" class="section">
-        <h2>Contact</h2>
-        <div class="contact-form">
-            <form action="mailto:your-email@example.com" method="post" enctype="text/plain">
-                <label for="name">Name</label>
-                <input type="text" id="name" name="name" required>
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email" required>
-                <label for="message">Message</label>
-                <textarea id="message" name="message" rows="5" required></textarea>
-                <button type="submit">Send</button>
-            </form>
-        </div>
-    </section>
-</div>
-<footer>
-    <p>&copy; 2024 Lee Sun Woo</p>
-</footer>
+        </section>
+    </div>
+    <footer>
+        <p>&copy; 2024 Lee Sun Woo</p>
+    </footer>
 </body>
 </html>
