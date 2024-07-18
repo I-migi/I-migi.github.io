@@ -5,74 +5,68 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>포트폴리오 & 블로그</title>
     <style>
-        /* 전반적인 스타일 설정 */
         body {
-            font-family: 'Arial', sans-serif; /* 글꼴 설정 */
+            font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4; /* 배경 색상 */
-            color: #333; /* 글자 색상 */
+            background-color: #f4f4f4;
+            color: #333;
             display: flex;
             flex-direction: column;
-            min-height: 100vh; /* 페이지가 전체 화면을 채우도록 설정 */
+            min-height: 100vh;
         }
-        /* 헤더 스타일 */
         header {
-            background-color: #333; /* 헤더 배경 색상 */
-            color: white; /* 헤더 글자 색상 */
+            background-color: #333;
+            color: white;
             padding: 20px 0;
-            text-align: center; /* 텍스트 중앙 정렬 */
+            text-align: center;
         }
         header h1 {
             margin: 0;
-            font-size: 2.5em; /* 헤더 글자 크기 */
+            font-size: 2.5em;
         }
-        /* 내비게이션 스타일 */
         nav {
             margin: 20px 0;
-            text-align: center; /* 링크 중앙 정렬 */
+            text-align: center;
         }
         nav a {
             margin: 0 15px;
-            text-decoration: none; /* 링크 밑줄 제거 */
-            color: #333; /* 링크 색상 */
+            text-decoration: none;
+            color: #333;
         }
         nav a:hover {
-            text-decoration: underline; /* 마우스를 올렸을 때 밑줄 추가 */
+            text-decoration: underline;
         }
-        /* 컨테이너 스타일 */
         .container {
             flex: 1;
             width: 80%;
-            margin: auto; /* 중앙에 위치 */
+            margin: auto;
         }
-        /* 섹션 스타일 */
         .section {
             padding: 20px 0;
-            border-bottom: 1px solid #ccc; /* 섹션 간 구분선 */
+            border-bottom: 1px solid #ccc;
         }
         .section:last-child {
-            border-bottom: none; /* 마지막 섹션 구분선 제거 */
+            border-bottom: none;
         }
         h2 {
             color: #333;
             text-align: center;
-            margin-bottom: 20px; /* 제목과 본문 간격 */
+            margin-bottom: 20px;
         }
         .projects, .skills, .contact {
             display: flex;
             justify-content: space-around;
-            flex-wrap: wrap; /* 작은 화면에서도 잘 보이도록 설정 */
+            flex-wrap: wrap;
         }
         .project, .skill {
             background: white;
             padding: 20px;
             margin: 10px;
-            border-radius: 8px; /* 모서리 둥글게 */
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* 그림자 효과 */
-            width: 45%; /* 각 항목의 너비 */
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 45%;
         }
-        /* 연락처 폼 스타일 */
         .contact-form {
             max-width: 600px;
             margin: auto;
@@ -85,4 +79,80 @@
             display: block;
             margin-bottom: 5px;
         }
-        .contact-form input, .contact-form text
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .contact-form button {
+            background: #333;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .contact-form button:hover {
+            background: #555;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: auto;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Lee Sun Woo's Portfolio & Blog</h1>
+    </header>
+    <nav>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="/posts/" target="_blank">Blog</a> <!-- Update link to posts directory -->
+    </nav>
+    <div class="container">
+        <section id="about" class="section">
+            <h2>About Me</h2>
+            <p>안녕하세요 백엔드 개발자를 지망하는 학생입니다 2024년 2월에 대학교 졸업예정이며, 현재는 Kernel360에서 교육을 받고있습니다.</p>
+        </section>
+        <section id="projects" class="section">
+            <h2>Projects</h2>
+            <div class="projects">
+                <div class="project">
+                    <h3>데이터 청년 캠퍼스</h3>
+                    <p></p>
+                </div>
+                <div class="project">
+                    <h3>멋쟁이 사자처럼 2024 해커톤</h3>
+                    <p></p>
+                </div>
+                <div class="project">
+                    <h3>Kernel 360</h3>
+                    <p></p>
+                </div>
+                
+            </div>
+        </section>
+        <section id="skills" class="section">
+            <h2>Skills</h2>
+            <div class="skills">
+                <div class="skill">
+                    <h3>Skill 1</h3>
+                    <p>스프링</p>
+                </div>
+                
+                <!-- Additional skills can be added here -->
+            </div>
+        </section>
+    </div>
+    <footer>
+        <p>&copy; 2024 Lee Sun Woo</p>
+    </footer>
+</body>
+</html>
